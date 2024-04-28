@@ -72,12 +72,12 @@ ALTER TABLE events
 
 -- Insert data into the events table
 INSERT INTO events (event_title, event_price, participants, type_id, location_id, date) VALUES
-('Mindspark', 50, 4, 1, 1, '2023-01-01'),
-('Impressions', 50, 2, 3, 3, '2022-12-21'),
-('Zest', 50, 1, 4, 3, '2023-02-01'),
-('RE-INIT', 50, 2, 1, 2, '2022-11-05'),
-('FlossMeet', 50, 1, 1, 5, '2023-04-11'),
-('Spandan', 50, 1, 3, 1, '2022-11-03');
+('Codeathon', 50, 10, 1, 1, '2024-05-06'),
+('Esports Tournament', 50, 15, 2, 2, '2024-05-07'),
+('Art Exhibition', 50, 10, 3, 3, '2024-05-08'),
+('Charity Fun Run', 50, 10, 4, 4, '2024-05-09'),
+('Tech Talk Series', 50, 15, 1, 3, '2024-05-10'),
+('Knowledge Challenge: Trivia Night', 50, 10, 5, 5, '2024-05-11');
 
 
 -- Create the participants table

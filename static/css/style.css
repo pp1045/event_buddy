@@ -132,7 +132,7 @@ a {
   align-items: center;
   flex-direction: column;
   min-width: 300px;
-  height: 250px;
+  height: 300px;
   /* line-height: 110px; */
   /* background-color: #ddd; */
   margin-right: 2px;
@@ -172,7 +172,7 @@ a {
 .item .event-info p {
   /* border: 2px solid blue; */
   height: 80%;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* Registration form */
