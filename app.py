@@ -193,17 +193,14 @@ def renderLoginPage():
                 "SELECT participants FROM events WHERE event_id=%s", (Event,)):
             return render_template('loginfail.html', errors=["Participants count fulfilled Already!"])
         
-        try:
+        
             
 
-            runQuery("INSERT INTO participants(event_id,fullname,email,mobile,college,branch_id) VALUES(%s,%s,%s,%s,%s,%s)",
-                    (Event, Name, Email, Mobile, 'COEP', Branch_id))
+        runQuery("INSERT INTO participants(event_id,fullname,email,mobile,college,branch_id) VALUES(%s,%s,%s,%s,%s,%s)",
+                (Event, Name, Email, Mobile, 'COEP', Branch_id))
 
-            return render_template('index.html', events=events, branchs=branch, errors=[f"Successfully Registered!"])
+        return render_template('index.html', events=events, branchs=branch, errors=[f"Successfully Registered!"])
 
-        except stripe.error.CardError as e:
-            # Payment failed, display error message to user
-            return render_template('loginfail.html', errors=[e.error.message])
 
     return render_template('index.html', events=events, branchs=branch)
 
