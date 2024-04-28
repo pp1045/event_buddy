@@ -147,7 +147,6 @@ import sys
 import datetime
 from flask import Flask, request, jsonify, render_template, redirect, url_for
 from random import randint
-import stripe
 
 app = Flask(__name__)
 
